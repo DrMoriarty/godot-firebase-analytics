@@ -1,0 +1,11 @@
+[config]
+
+name="FirebaseAnalytics"
+binary_type="remote"
+binary="ru.mobilap.godot:godot-firebase-analytics:+"
+
+[dependencies]
+
+local=[]
+remote=[]
+custom_maven_repos=["https://dl.bintray.com/mobilap/maven/"]
