@@ -5,6 +5,7 @@
   "license": "MIT",
   "url": "https://github.com/DrMoriarty/godot-firebase-analytics",
   "dependencies": [
+    "firebase-core"
   ],
   "files": {
     "scripts": "scripts"
