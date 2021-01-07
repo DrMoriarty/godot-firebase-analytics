@@ -1,0 +1,21 @@
+{
+  "name": "firebase-analytics",
+  "description": "Firebase Analytics plugin",
+  "version": "0.1.0",
+  "license": "MIT",
+  "url": "https://github.com/DrMoriarty/godot-firebase-analytics",
+  "dependencies": [
+  ],
+  "files": {
+    "scripts": "scripts"
+  },
+  "autoload": {
+    "fba": "*res://scripts/fba.gd"
+  },
+  "platform_android": {
+    "files": {
+      "android-plugin/FirebaseAnalytics.gdap": "android/plugins/",
+      "android-plugin/build/outputs/aar/FirebaseAnalytics.release.aar": "android/plugins/"
+    }
+  }
+}

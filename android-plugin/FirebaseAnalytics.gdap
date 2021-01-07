@@ -1,8 +1,8 @@
 [config]
 
 name="FirebaseAnalytics"
-binary_type="remote"
-binary="ru.mobilap.godot:godot-firebase-analytics:+"
+binary_type="local"
+binary="FirebaseAnalytics.release.aar"
 
 [dependencies]
 
