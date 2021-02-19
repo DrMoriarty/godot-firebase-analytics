@@ -1,9 +1,17 @@
 {
   "name": "firebase-analytics",
-  "description": "Firebase Analytics plugin",
-  "version": "0.1.0",
+  "display_name": "Firebase Analytics",
+  "description": "Firebase Analytics plugin (also supports Google Analytics with Firebase account)",
+  "version": "0.1.1",
+  "godot_version": "3.2.3",
   "license": "MIT",
   "url": "https://github.com/DrMoriarty/godot-firebase-analytics",
+  "category": "misc",
+  "author": {
+    "name": "DrMoriarty",
+    "url": "https://github.com/DrMoriarty",
+    "donate": "https://ko-fi.com/drmoriarty"
+  },
   "dependencies": [
     "firebase-core"
   ],
