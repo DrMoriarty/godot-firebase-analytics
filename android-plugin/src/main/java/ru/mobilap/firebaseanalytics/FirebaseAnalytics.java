@@ -22,13 +22,11 @@ public class FirebaseAnalytics extends GodotPlugin {
 
     private final String TAG = FirebaseAnalytics.class.getName();
     //final private SignalInfo loadedSignal = new SignalInfo("loaded");
-    private Godot activity = null;
     private boolean _loaded = false;
     private com.google.firebase.analytics.FirebaseAnalytics fa;
 
     public FirebaseAnalytics(Godot godot) {
         super(godot);
-        activity = godot;
         init();
     }
 
@@ -55,7 +53,7 @@ public class FirebaseAnalytics extends GodotPlugin {
     }
 
     private void init() {
-        fa = com.google.firebase.analytics.FirebaseAnalytics.getInstance(activity);
+        fa = com.google.firebase.analytics.FirebaseAnalytics.getInstance(getActivity());
     }
     
     public void logEvent(final String event, final Dictionary params) {

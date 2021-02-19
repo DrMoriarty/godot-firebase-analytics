@@ -8,9 +8,12 @@ var _fba = null
 # User property names: sign_up_method (str)
 
 func _ready():
-    if type_exists('FirebaseAnalytics'):
+    if(Engine.has_singleton("FirebaseAnalytics")):
+        _fba = Engine.get_singleton("FirebaseAnalytics")
+        print('FirebaseAnalytics plugin inited!')
+    elif type_exists('FirebaseAnalytics'):
         _fba = ClassDB.instance('FirebaseAnalytics')
-
+        print('FirebaseAnalytics plugin inited!')
 
 func screen(name, screen_class='Godot'):
     # log game screen
