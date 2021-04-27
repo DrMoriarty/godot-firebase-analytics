@@ -2,8 +2,8 @@
   "name": "firebase-analytics",
   "display_name": "Firebase Analytics",
   "description": "Firebase Analytics plugin (also supports Google Analytics with Firebase account)",
-  "version": "0.1.2",
-  "godot_version": "3.2.3",
+  "version": "0.2.0",
+  "godot_version": "3.3.0",
   "license": "MIT",
   "url": "https://github.com/DrMoriarty/godot-firebase-analytics",
   "category": "misc",
@@ -25,6 +25,23 @@
     "files": {
       "android-plugin/FirebaseAnalytics.gdap": "android/plugins/",
       "android-plugin/build/outputs/aar/FirebaseAnalytics.release.aar": "android/plugins/"
+    }
+  },
+  "platform_ios": {
+    "files": {
+      "ios-plugin/bin/firebase-analytics.debug.xcframework": "ios/plugins/firebase-analytics/firebase-analytics.debug.xcframework",
+      "ios-plugin/bin/firebase-analytics.release.xcframework": "ios/plugins/firebase-analytics/firebase-analytics.release.xcframework",
+      "ios-plugin/firebase-analytics.gdip": "ios/plugins/firebase-analytics/",
+      "ios-plugin/FIRAnalyticsConnector.framework": "ios/plugins/firebase-analytics/FIRAnalyticsConnector.framework",
+      "ios-plugin/FirebaseAnalytics.framework": "ios/plugins/firebase-analytics/FirebaseAnalytics.framework",
+      "ios-plugin/FirebaseCore.xcframework": "ios/plugins/firebase-analytics/FirebaseCore.xcframework",
+      "ios-plugin/FirebaseCoreDiagnostics.xcframework": "ios/plugins/firebase-analytics/FirebaseCoreDiagnostics.xcframework",
+      "ios-plugin/FirebaseInstallations.xcframework": "ios/plugins/firebase-analytics/FirebaseInstallations.xcframework",
+      "ios-plugin/GoogleAppMeasurement.framework": "ios/plugins/firebase-analytics/GoogleAppMeasurement.framework",
+      "ios-plugin/GoogleDataTransport.xcframework": "ios/plugins/firebase-analytics/GoogleDataTransport.xcframework",
+      "ios-plugin/GoogleUtilities.xcframework": "ios/plugins/firebase-analytics/GoogleUtilities.xcframework",
+      "ios-plugin/nanopb.xcframework": "ios/plugins/firebase-analytics/nanopb.xcframework",
+      "ios-plugin/PromisesObjC.xcframework": "ios/plugins/firebase-analytics/PromisesObjC.xcframework"
     }
   }
 }

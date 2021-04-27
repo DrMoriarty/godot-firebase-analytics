@@ -1,0 +1,14 @@
+
+[config]
+name="FirebaseAnalytics"
+binary="firebase-analytics.xcframework"
+initialization="firebase_analytics_init"
+deinitialization="firebase_analytics_deinit"
+
+[dependencies]
+linked=["FIRAnalyticsConnector.framework", "FirebaseAnalytics.framework", "FirebaseCore.xcframework", "FirebaseCoreDiagnostics.xcframework", "FirebaseInstallations.xcframework", "GoogleAppMeasurement.framework", "GoogleDataTransport.xcframework", "GoogleUtilities.xcframework", "nanopb.xcframework", "PromisesObjC.xcframework"]
+embedded=[]
+system=[]
+capabilities=[]
+files=[]
+[plist]

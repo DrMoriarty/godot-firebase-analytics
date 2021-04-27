@@ -1,0 +1,22 @@
+{
+  "name": "firebase-analytics",
+  "display_name": "FirebaseAnalytics",
+  "description": "",
+  "version": "1.0.0",
+  "license": "MIT",
+  "url": "https://github.com/YourGitHubName/your_github_repository",
+  "category": "misc",
+  "godot_version": "3.2.4",
+  "author": {
+    "name": "Your Name",
+    "url": "https://your_site.com",
+    "donate": "Url to your donate page, or remove if not needed"
+  },
+  "platform_ios": {
+    "files": {
+      "bin/firebase-analytics.debug.xcframework": "ios/plugins/firebase-analytics/firebase-analytics.debug.xcframework",
+      "bin/firebase-analytics.release.xcframework": "ios/plugins/firebase-analytics/firebase-analytics.release.xcframework",
+      "firebase-analytics.gdip": "ios/plugins/firebase-analytics/"
+    }
+  }
+}
