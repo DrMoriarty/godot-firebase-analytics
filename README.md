@@ -9,6 +9,9 @@ Don't forget to enable Android platform in NativeLib before install this plugin.
 You should put `google-services.json` into `android/build` folder.
 The `google-services.json` you could download from your firebase console where you manage platforms of your project.
 
+# Usage
+
+The plugin's script will be automatically added to your autoloading list. So you will get global object `fba` with methods described below.
 
 # API
 
