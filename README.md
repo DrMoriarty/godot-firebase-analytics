@@ -2,11 +2,19 @@
 
 Use [NativeLib Addon](https://github.com/DrMoriarty/nativelib) or [NativeLib-CLI](https://github.com/DrMoriarty/nativelib-cli) for installation.
 
-Now it only supports Android. iOS support will be coming soon.
-Don't forget to enable Android platform in NativeLib before install this plugin.
+It supports Android and iOS.
+Don't forget to enable Android and/or iOS platform in NativeLib before installing this plugin.
+
+## For iOS
+
+Ensure that plugin `NativeLib-Export` installed and enabled
+
+Add `GoogleService-Info.plist` in `addons/nativelib-export/iOS` (you could download it from the firebase console where you manage platforms of your project)
 
 ## For Android
+
 You should put `google-services.json` into `android/build` folder.
+
 The `google-services.json` you could download from your firebase console where you manage platforms of your project.
 
 # Usage
