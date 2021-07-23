@@ -166,34 +166,34 @@ NSObject *variant_to_nsobject(Variant v) {
 /*
  * Bind plugin's public interface
  */
-void PluginClass::_bind_methods() {
-    ClassDB::bind_method(D_METHOD("setUserProperty"), &PluginClass::setUserProperty);
-    ClassDB::bind_method(D_METHOD("setUserId"), &PluginClass::setUserId);
-    ClassDB::bind_method(D_METHOD("logEvent"), &PluginClass::logEvent);
+void FirebaseAnalytics::_bind_methods() {
+    ClassDB::bind_method(D_METHOD("setUserProperty"), &FirebaseAnalytics::setUserProperty);
+    ClassDB::bind_method(D_METHOD("setUserId"), &FirebaseAnalytics::setUserId);
+    ClassDB::bind_method(D_METHOD("logEvent"), &FirebaseAnalytics::logEvent);
 }
 
-PluginClass::PluginClass() {
+FirebaseAnalytics::FirebaseAnalytics() {
     NSLog(@"Initialize FirebaseAnalytics");
     [FIRApp configure];
 }
 
-PluginClass::~PluginClass() {
+FirebaseAnalytics::~FirebaseAnalytics() {
     NSLog(@"Deinitialize FirebaseAnalytics");
 }
 
-void PluginClass::logEvent(String arg1, Dictionary arg2) {
+void FirebaseAnalytics::logEvent(String arg1, Dictionary arg2) {
     NSString *a1 = to_nsstring(arg1);
     NSDictionary *a2 = to_nsdictionary(arg2);
     
     [FIRAnalytics logEventWithName:a1 parameters:a2];
 }
 
-void PluginClass::setUserId(String arg1) {
+void FirebaseAnalytics::setUserId(String arg1) {
     NSString *a1 = to_nsstring(arg1);
     [FIRAnalytics setUserID:a1];
 }
 
-void PluginClass::setUserProperty(String arg1, String arg2) {
+void FirebaseAnalytics::setUserProperty(String arg1, String arg2) {
     NSString *a1 = to_nsstring(arg1);
     NSString *a2 = to_nsstring(arg2);
     [FIRAnalytics setUserPropertyString:a2 forName:a1];

@@ -10,8 +10,8 @@
 
 #include "core/object.h"
 
-class PluginClass : public Object {
-    GDCLASS(PluginClass, Object);
+class FirebaseAnalytics : public Object {
+    GDCLASS(FirebaseAnalytics, Object);
     
     static void _bind_methods();
     
@@ -20,8 +20,8 @@ public:
     void setUserId (String arg1);
     void logEvent (String arg1, Dictionary arg2);
     
-    PluginClass();
-    ~PluginClass();
+    FirebaseAnalytics();
+    ~FirebaseAnalytics();
 };
 
 
